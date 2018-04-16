@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>注册成为会员</title>
+		<link rel="stylesheet" href="css/login.min.css">
+		<script src="js/require.js" defer async="true" data-main="js/main"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div id="nav-bar" class="box">
+				<ul class="left-navbar cl">
+					<li><a href="#">手机版</a></li>
+					<li><a href="#">企业采购</a></li>
+					<li><a href="#">商城公告</a></li>
+				</ul>
+				<ul class="right-navbar cl">
+					<li><a href="login.html">登录</a></li>
+					<li><a href="register.html">注册</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-container">
+			<div class="passport-login-container cl">
+				<div class="ad-block">
+					<ul>
+						<li><img src="images/63d9d1cde23f.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="login-pannel">
+					<div class="pannel-heading cl">欢迎注册</div>
+					<div class="pannel-body">
+						<form action="" id="member_register_form" class="">
+							<div class="form-group">
+								<div class="col-md-10">
+									<input type="text" id="input_uname" class="form-control" required="true" autocomplete="off" name="uname" placeholder="仅支持手机号" type="text">
+								</div>
+								<p id="remind_1" style="display: none; padding-left: 10px; color: #dc143c;"></p>
+							</div>
+							<div class="form-group">
+								<div class="col-md-10">
+									<input type="password" id="input_password" class="form-control" required="true" name="password" placeholder="登录密码">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-10">
+									<input type="password" id="input_password" class="form-control" required="true" name="password" placeholder="再次输入登录密码">
+								</div>
+							</div>
+							<div id="password_vcode" class="form-group">
+								<div class="col-md-10" style="width: 65%; position: relative; display: inline-block">
+									<input type="text" id="input_vcode" class="form-control" required="required" name="vcode" placeholder="验证码" style="width: 100%">
+									<div class="col-md-5">
+										<img src="https://www.myzte.com/vcode-index-passport.html?1523413048144" alt="验证码">
+									</div>
+								</div>
+								<button class="btn btn-link" type="button" onclick="$(this).prev().find('.col-md-5').children('img').prop('src',$(this).attr('data-src')+'?'+new Date().getTime())" data-src="https://www.myzte.com/vcode-index-passport.html">更换验证码</button>
+							</div>
+							<div class="form-group">
+								<div class="col-md-10">
+									<input type="text" id="input_phone_vcode" class="form-control" required="true" name="phone-vcode" placeholder="短信验证码">
+									<div class="mobile-vcode">
+										<button type="button" data-loading-text="正在发送..." class="btn mobile-vcode" style="padding: 9px 12px">获取短信验证码</button>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-10">
+									<button class="btn login-btn" type="submit" data-loading-text="正在登录...">立即注册</button>
+								</div>
+								<div class="col-md-10 register-text-center">
+									已有账号?
+									<a href="" class="register-now">立即登录</a>
+								</div>
+							</div>			
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer container">
+			<div class="footer-inner box">
+				<div class="footer-top">
+					<ul class="list-unstyled cl">
+						<li><img src="images/7.png" alt=""><span>7天退货保障</span></li>
+						<li><img src="images/30.png" alt=""><span>15天换货承诺</span></li>
+						<li><img src="images/mian.png" alt=""><span>150元起全场免运费</span></li>
+						<li><img src="images/position.png" alt=""><span>全国售后服务点</span></li>
+					</ul>
+				</div>
+				<div class="footer-center">
+					<div class="footer-plus">
+						<div class="help-center">
+							<ul class="list-unstyled cl">
+								<li class="help-title">
+									<a href="">关注我们</a>
+								</li>
+								<li class="help-list">
+									<ul>
+										<li><a href="">中兴社区</a></li>
+										<li><a href="">官方微信</a></li>
+										<li><a href="">新浪微博</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="list-unstyled cl">
+								<li class="help-title">
+									<a href="">帮助中心</a>
+								</li>
+								<li class="help-list">
+									<ul>
+										<li><a href="">支付方式</a></li>
+										<li><a href="">购物指南</a></li>
+										<li><a href="">配送指南</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="list-unstyled cl">
+								<li class="help-title">
+									<a href="">售后服务</a>
+								</li>
+								<li class="help-list">
+									<ul>
+										<li><a href="">退换货流程</a></li>
+										<li><a href="">售后网点</a></li>
+										<li><a href="">退换货政策</a></li>
+										<li><a href="">保修政策</a></li>
+									</ul>
+								</li>
+							</ul>
+							<ul class="list-unstyled cl">
+								<li class="help-title">
+									<a href="">关于商城</a>
+								</li>
+								<li class="help-list">
+									<ul>
+										<li><a href="">联系我们</a></li>
+										<li><a href="">商城简介</a></li>
+										<li><a href="">礼品团购</a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="call-block">
+							<div class="tell">
+								<div class="kefu">
+									<img src="images/kefu.png" alt="">
+									<a href="">在线客服</a>
+								</div>
+								<div class="explain">周一到周日 9:00 - 24:00 (全年无休)</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<ul class="list-unstyled cl">
+						<li><a href="">中兴社区</a></li>
+						<li><a href="">中兴通讯</a></li>
+						<li><a href="">汇天地</a></li>
+						<li><a href="">中兴云服务</a></li>
+						<li><a href="">中兴手机</a></li>
+					</ul>
+					<div class="copy-right">
+						<a href="">服务协议</a>
+						丨©2014 - 2017 深圳市中兴智谷科技有限公司版权所有，并保留所有权利
+					</div>
+					<div class="copy-right">
+						增值电信业务经营许可证：粤B2-20160352 丨 ICP备案证书号 ：
+						<a href="">粤ICP备16018970</a>
+						丨
+						<a href="">粤公网安备 44030502001132</a>丨<a href="">工商网监</a>
+					</div>
+				</div>
+			</div>
+			<div class="toolbar">
+				<a href="" class="toolbar-item toolbar-item-weixin">
+					<span class="toolbar-layer"></span>
+				</a>
+				<a href="" class="toolbar-item toolbar-item-feedback"></a>
+				<a href="" class="toolbar-item toolbar-item-top"></a>
+			</div>
+		</div>
+	</body>
+</html>
